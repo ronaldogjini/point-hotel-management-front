@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const ax = axios.create({
-    baseURL: 'http://127.0.0.1:8000/api/',
+    baseURL: 'https://point-hotel-management-back.herokuapp.com/api/',
     headers: {
         Accept: "application/json"
     },
