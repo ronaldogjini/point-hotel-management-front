@@ -3,7 +3,7 @@
       <v-parallax
           class="pa-0"
           dark
-          src="http://127.0.0.1:8000/storage/rooms/banner.jpg"
+          v-bind:src="bannerImg"
       >
         <v-row
             style='background: rgba(0, 0, 0, .5)'
@@ -46,6 +46,7 @@ import HotelFeatures from '@/components/Homepage/HotelFeatures'
 import BookingMainPage from '@/components/Homepage/BookingMainPage'
 import RoomTypes from '@/components/Homepage/RoomTypes'
 import {User} from '../Objects/User'
+import Banner from '@/assets/banner/banner.jpg'
 
 export default {
   name: 'Mainpage',
@@ -56,6 +57,7 @@ export default {
   },
   data: () => ({
     user: new User(),
+    bannerImg: Banner,
     rooms: null,
     responseStatus: '',
     roomVuex: '',

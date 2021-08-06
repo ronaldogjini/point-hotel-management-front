@@ -4,7 +4,7 @@
       <v-app-bar app dark class="black hidden-sm-and-down">
         <v-toolbar-title  class="white--text pl-15 display-1">
           <router-link to="/" tag="span" style="cursor: pointer">
-            <v-img max-height="100px" max-width="120px" src='http://127.0.0.1:8000/storage/logos/logo.png'></v-img>
+            <v-img max-height="100px" max-width="120px" :src="logo"></v-img>
           </router-link>
         </v-toolbar-title>
          <v-spacer></v-spacer>
@@ -52,7 +52,7 @@
       <v-app-bar app dark color="black" class="hidden-md-and-up">
         <v-toolbar-title>
           <router-link to="/" tag="span" style="cursor: pointer">
-            <v-img max-height="90px" max-width="90px" src='http://127.0.0.1:8000/storage/logos/logo.png'></v-img>
+            <v-img max-height="90px" max-width="90px" :src="logo"></v-img>
           </router-link>
         </v-toolbar-title>
         <v-spacer></v-spacer>
@@ -62,7 +62,7 @@
           <v-card dark class="black lighten-2">
             <v-toolbar flat color="black">
               <v-toolbar-title>
-                <v-img max-height="50px" max-width="50px" src='http://127.0.0.1:8000/storage/logos/logo.png'></v-img>
+                <v-img max-height="50px" max-width="50px" :src="logo"></v-img>
               </v-toolbar-title>
               <v-spacer></v-spacer>
               <v-btn dark icon @click.native="drawer = false">
@@ -117,12 +117,14 @@
 
 <script>
 import {mapGetters, mapActions} from 'vuex'
+import Logo from '@/assets/logo.png'
 
 export default {
   name: "NavigationBar",
   data () {
     return {
       drawer: false,
+      logo: Logo
     }
   },
   methods: {

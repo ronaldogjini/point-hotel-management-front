@@ -40,18 +40,18 @@ export default {
         {
           name: "Luxury Service",
           description: "Enjoy the ultimate luxury service at Point hotel. From the ultra luxorious rooms, to an undisrupted view of the ocean, to a 24/7 hour butler service.",
-          url: "http://127.0.0.1:8000/storage/icons/waiter.png"
+          url: require('@/assets/icons/waiter.png')
         },
         {
           name: " Relaxation",
           description: "Point Hotel makes sure you get the most of your stay in our premises. Take advantage of our SPA, sauna to relax. Or book a massage session to release all the negative energy.",
-          url: "http://127.0.0.1:8000/storage/icons/flower.webp"
+          url: require('@/assets/icons/flower.webp')
 
         },
         {
           name: "Dining Service",
           description: "Enjoy the best food cooked by the best chefs in the country. Enjoy a five course meal at our restaurant, cooked with love.",
-          url: "http://127.0.0.1:8000/storage/icons/food.png"
+          url: require('@/assets/icons/food.png')
         },
       ]
     };
